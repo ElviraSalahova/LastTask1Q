@@ -4,7 +4,7 @@
 
 //------------------------Task for Exam----------------------
 
-string[] array1 = new string[6] {"Elvira", "Hello", "2", "the", "world", "again"};
+string[] array1 = new string[6] {"Elvira", "Hello", "2", "the", "world", "23"};
 string[] array2 = new string[array1.Length];
 
 void SecondArray (string[] array1, string[] array2)
@@ -20,3 +20,13 @@ void SecondArray (string[] array1, string[] array2)
     }
 }
 
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+SecondArray(array1, array2);
+PrintArray(array2);
